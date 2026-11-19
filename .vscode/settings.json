@@ -1,0 +1,17 @@
+// ROS Python packages for autocompletion. The path depends on the distro and its Python:
+//   Lyrical: /opt/ros/lyrical/lib/python3.14/site-packages
+//   Kilted:  /opt/ros/kilted/lib/python3.12/site-packages
+//   Humble:  /opt/ros/humble/lib/python3.10/site-packages
+//            + /opt/ros/humble/local/lib/python3.10/dist-packages
+// Switched distro? Replace the ROS path in both lists below.
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "/opt/ros/lyrical/lib/python3.14/site-packages",
+    "${workspaceFolder}"
+  ],
+  "python.autoComplete.extraPaths": [
+    "/opt/ros/lyrical/lib/python3.14/site-packages",
+    "${workspaceFolder}"
+  ]
+}
